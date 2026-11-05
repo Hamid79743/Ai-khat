@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-thuluth {
+    font-family: 'Amiri', 'Scheherazade New', serif;
+  }
+  .font-naskh {
+    font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+  }
+  .font-diwani {
+    font-family: 'Marhey', 'Amiri', cursive;
+  }
+  .font-ruqaa {
+    font-family: 'Aref Ruqaa', 'Amiri', serif;
+  }
+  .font-kufic {
+    font-family: 'Reem Kufi', sans-serif;
+  }
+  .font-nastaliq {
+    font-family: 'Noto Nastaliq Urdu', 'Gulzar', serif;
+    line-height: 2.2 !important;
+  }
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #fff3b0 0%, #e2be58 35%, #c59b27 70%, #f6df8d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-gold-bright {
+    background: linear-gradient(135deg, #ffffff 0%, #f7e59b 40%, #d4af37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .border-gold-glow {
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+  }
+  .gold-shimmer {
+    background: linear-gradient(90deg, transparent 0%, rgba(243, 229, 171, 0.15) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: shimmer 4s infinite linear;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Islamic Geometric & Arabesque subtle patterns */
+.bg-islamic-pattern {
+  background-color: #04140e;
+  background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 1px),
+                    radial-gradient(rgba(16, 185, 129, 0.05) 1px, #04140e 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.bg-emerald-deep {
+  background-color: #03140e;
+}
+
+.bg-emerald-surface {
+  background-color: #072218;
+}
+
+.bg-emerald-card {
+  background-color: #0b2d20;
+}
+
+/* Custom gold scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #03140e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a5542;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c59b27;
+}

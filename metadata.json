@@ -1,0 +1,6 @@
+{
+  "name": "Khatat AI",
+  "description": "Arabic Calligraphy AI platform for creating custom calligraphy designs, analyzing script styles, extracting Arabic text, and mastering letter anatomy in Thuluth, Naskh, Diwani, Ruq'ah, Kufic, and Nastaliq.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
